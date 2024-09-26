@@ -1,0 +1,26 @@
+@use "hero";
+@use "variable";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: variable.$colorPrimary;
+    list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80px;
+    }
+    
+    @media (max-width: 1024px) {
+        max-width: 90px;
+    }
+}
+
