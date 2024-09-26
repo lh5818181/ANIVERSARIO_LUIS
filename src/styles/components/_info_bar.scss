@@ -1,0 +1,45 @@
+@use '../variable';
+
+
+.info-bar {
+    padding: 26px 24px;
+    background-color: variable.$colorPrimary;
+    display: flex;
+    justify-content: space-between;
+
+    &__info {
+        display: flex;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: variable.$colorSecondary;
+
+            b {
+                color: variable.$colorSecondary;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+
+    @media (max-width: 640px) { //tamanho do celular
+        display: block;
+
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+
+            }
+        }
+    }
+
+    @media (max-width: 1024px) { //tamanho do tablet
+        &__infos {
+            gap: 16px;
+        }
+    }
+}
