@@ -64,7 +64,7 @@
 
 .button--primary {
   color: #fff;
-  background-color: #4c14b0;
+  background-color: #451796;
 }
 
 @media (width <= 640px) {
@@ -125,11 +125,19 @@
 }
 
 .event--happy {
-  background-image: linear-gradient(#4c14b0, #bae835);
+  background-image: linear-gradient(#451796, #58ac28);
 }
 
 .event--drink {
-  background-image: linear-gradient(#bae835, #4c14b0);
+  background-image: linear-gradient(#58ac28, #451796);
+}
+
+.event--bolo {
+  background-image: linear-gradient(#451796, #58ac28);
+}
+
+.event--game {
+  background-image: linear-gradient(#58ac28, #58ac28);
 }
 
 .event--image-left .container {
@@ -158,10 +166,6 @@
 
 .event__image {
   max-width: 360px;
-}
-
-.event__details {
-  display: flex;
 }
 
 .event__details__title {

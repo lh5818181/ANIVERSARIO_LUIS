@@ -6,16 +6,17 @@
     &--happy { 
         background-image: linear-gradient( variable.$ColorPurple, variable.$colorGreen);
     }
-
     &--drink {
         background-image: linear-gradient( variable.$colorGreen, variable.$ColorPurple);
     }
-
-    &--drink {
-        background-image: linear-gradient( variable.$colorGreen, variable.$ColorPurple);
+    &--bolo {
+        background-image: linear-gradient( variable.$ColorPurple, variable.$colorGreen);
+    }
+    &--game {
+        background-image: linear-gradient( variable.$colorGreen, variable.$colorGreen);
     }
 
-    &--image-left { //adicionar na class da section 2 e 4
+    &--image-left {
         .container {
             flex-direction: row-reverse;
             gap: 40px;
@@ -46,7 +47,6 @@
     }
 
     &__details {
-        display: flex;
         
         &__title {
             font-size: 18px;
