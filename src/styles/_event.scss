@@ -25,6 +25,8 @@
 
     .container {
         display: flex;
+        width: 100%;
+        margin: 0 auto;
 
         @media (max-width: 640px) { //tamanho da tela do celular
             .container {
@@ -51,6 +53,7 @@
         &__title {
             font-size: 18px;
             font-weight: bold;
+            margin-bottom: 16px;
         }
 
         &__description {

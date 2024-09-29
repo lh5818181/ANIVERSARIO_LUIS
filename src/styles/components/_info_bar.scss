@@ -14,7 +14,8 @@
         &__item {
             font-size: 14px;
             color: variable.$colorSecondary;
-
+            margin: 0 10px;
+            
             b {
                 color: variable.$colorSecondary;
                 font-size: 18px;
@@ -25,9 +26,16 @@
 
 
     @media (max-width: 640px) { //tamanho do celular
-        display: block;
+            display: block;
 
-        &__infos {
+            .container {
+                display: flex;
+                margin: 0px 42px;
+                flex-direction: column;
+                flex-wrap: wrap; }
+                
+
+        &__info {
             display: block;
 
             &__item {
@@ -38,7 +46,7 @@
     }
 
     @media (max-width: 1024px) { //tamanho do tablet
-        &__infos {
+        &__info {
             gap: 16px;
         }
     }
