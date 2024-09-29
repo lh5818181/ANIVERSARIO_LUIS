@@ -3,31 +3,28 @@
 .event {
     padding: 80px 0;
 
-    &--happy { 
+    &--happy { //Gradiente de fundo
         background-image: linear-gradient( variable.$ColorPurple, variable.$colorGreen);
     }
-    &--drink {
+    &--drink { //Gradiente de fundo
         background-image: linear-gradient( variable.$colorGreen, variable.$ColorPurple);
     }
-    &--bolo {
+    &--bolo { //Gradiente de fundo
         background-image: linear-gradient( variable.$ColorPurple, variable.$colorGreen);
     }
-    &--game {
+    &--game { //Gradiente de fundo
         background-image: linear-gradient( variable.$colorGreen, variable.$colorGreen);
     }
 
-    &--image-left {
+        &--image-left {  //reverter posição da imagem
         .container {
             flex-direction: row-reverse;
             gap: 40px;
         }
     }
-
-    .container {
+        .container { 
         display: flex;
-        width: 100%;
-        margin: 0 auto;
-
+        
         @media (max-width: 640px) { //tamanho da tela do celular
             .container {
                 display: block;
@@ -49,9 +46,10 @@
     }
 
     &__details {
-        
+        margin-right: 14px;
+
         &__title {
-            font-size: 18px;
+            font-size: 26px;
             font-weight: bold;
             margin-bottom: 16px;
         }

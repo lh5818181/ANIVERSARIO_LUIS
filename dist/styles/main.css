@@ -164,8 +164,6 @@
 }
 
 .event .container {
-  width: 100%;
-  margin: 0 auto;
   display: flex;
 }
 
@@ -188,9 +186,13 @@
   max-width: 360px;
 }
 
+.event__details {
+  margin-right: 14px;
+}
+
 .event__details__title {
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: 26px;
   font-weight: bold;
 }
 
